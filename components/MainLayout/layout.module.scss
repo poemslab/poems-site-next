@@ -1,0 +1,15 @@
+.app {
+	margin: 31px 31px 31px 281px;
+}
+
+@media(max-width: 1050px) {
+	.app {
+		margin: 31px;
+	}
+}
+
+@media (max-width: 500px) {
+	.app {
+		margin: 0px 15px 15px 15px;
+	}
+}

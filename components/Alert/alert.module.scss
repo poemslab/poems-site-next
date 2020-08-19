@@ -1,0 +1,27 @@
+.alert {
+  width: 100%;
+  min-height: 170px;
+  border-radius: 15px;
+  padding: 30px 70px;
+  background: #F25C5C;
+
+  &_title h1 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 57px;
+  }
+  
+  &_subtitle {
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 425px;
+    max-height: 66px;
+  }
+
+  a {
+    text-decoration: underline;
+    color: #fff;
+  }
+}

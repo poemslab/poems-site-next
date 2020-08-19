@@ -1,0 +1,91 @@
+.grid {
+  margin-top: 100px;
+  min-height: 70vh;
+  margin-left: 80px;
+  margin-right: 80px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 20px;
+
+  p {
+    margin-top: 5px;
+  }
+}
+
+.lyrics {
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  padding: 20px;
+  grid-column: span / 6;
+}
+
+.info {
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  position: sticky;
+  top: 0px;
+
+  &_body {
+    padding: 0px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  img {
+    object-fit: cover;
+    height: 45%;
+    border-radius: 12px 12px 0px 0px;
+    width: 100%;
+  }
+}
+
+.title {
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.subtitle {
+  color: #000000;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.btn_block {
+  display: flex;
+  margin: 10px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  margin-right: 10px;
+}
+
+@media (max-width: 720px) {
+  .grid {
+    margin: 0px;
+    grid-template-columns: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    column-gap: 0px;
+  }
+
+  .lyrics {
+    grid-column: -3;
+    min-width: 100%;
+    margin-top: 20px;
+  }
+
+  .sticky {
+    grid-row: 1;
+    grid-column: -3;
+    min-width: 100%;
+  }
+}

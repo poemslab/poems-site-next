@@ -1,0 +1,32 @@
+body, p, ul, li, h1, h2, h3, h4, h5 {
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7fc;
+}
+
+@keyframes Bounce {
+	0% {
+		-webkit-transform: scale3d(0, 0, 0);
+		transform: scale3d(0, 0, 0)
+	}
+	80% {
+		-webkit-transform: scale3d(1.12, 1.12, 1.12);
+		transform: scale3d(1.12, 1.12, 1.12)
+	}
+	to {
+		-webkit-transform: scaleX(1);
+		transform: scaleX(1)
+	}
+}
